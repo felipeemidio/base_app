@@ -1,0 +1,17 @@
+{
+	"RxController": {
+		"prefix": ["rxcontroller", "controller"],
+		"description": "A basic controller with RxNotifier",
+		"body": [
+			"import 'package:rx_notifier/rx_notifier.dart';",
+			"",
+			"class ${2:NameController} {",
+			"  final _isLoading = RxNotifier<bool>(false);",
+			"  final _failureMessage = RxNotifier<String?>(null);",
+			"",
+			"  bool get isLoading => _isLoading.value;",
+			"  String? get failureMessage => _failureMessage.value;"
+			,"}"
+		]
+	}
+}
